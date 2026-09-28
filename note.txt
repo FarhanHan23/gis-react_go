@@ -1,0 +1,22 @@
+model adalah representasi data tabel database dalam bentuk struktur data struct di Golang
+
+dari model ini kita bisa melakukan CRUD pada tabel yang bersangkutan
+
+models
+role = mengelompokkan hak akses permission ke role tertentu (admin, editor, pengguna biasa)
+permission = hak akses
+Many2Many setiap role bisa memiliki banyak permission dan setiap permission bisa dimiliki banyak role
+
+user = pengguna yang memiliki akses ke dalam sistem
+Many2Many = setiap user bisa memiliki banyak role dan setiap role dimiliki banyak user
+
+category = mengelompokkan banyak map(peta) ke dalam beberapa category tertentu (Pendidikan, Kesehatan, atau Perdagangan)
+One2Many = setiap category memilkiki banyak map tapi setiap map hanyak memiliki 1 category saja 
+
+Map = struct berisi info sebuah peta
+
+setting = struct berisi konfigurasi global aplikasi
+
+Auto migration = membuat dan memperbarui struktur tabel di database sesuai dengan model yang telah didefinisikan tadi
+
+
