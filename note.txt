@@ -19,4 +19,4 @@ setting = struct berisi konfigurasi global aplikasi
 
 Auto migration = membuat dan memperbarui struktur tabel di database sesuai dengan model yang telah didefinisikan tadi
 
-
+NEXT : 29092026 | Membuat Seeder Permission
